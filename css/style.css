@@ -1,11 +1,11 @@
 /*bootstrap*/
-.nav-item:hover{
+.nav-item:hover {
     font-size: 20px;
     box-shadow: 5px 5px 15px 5px black;
- }
+}
 
-.nav-link{
-    color: white ;
+.nav-link {
+    color: white;
 }
 
 .navbar-brand img {
@@ -13,7 +13,8 @@
     height: 50px;
     object-fit: contain;
 }
-.navbar-brand img:hover{
+
+.navbar-brand img:hover {
     width: 60px;
     height: 60px;
     box-shadow: 5px 5px 15px 0px black;
@@ -22,6 +23,12 @@
 .container-fluid {
     text-align: center;
     padding: 10px;
+}
+
+.carousel-inner img {
+    width: 100px;
+    height: 300px;
+    object-fit: cover;
 }
 
 /* estilos para la barra de menu principal de la pagina */
@@ -124,109 +131,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 50px;
 }
 
 .hero img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 100%;
-    padding: 50px;
-    filter: sepia(3);
-}
 
-.hero:hover img {
-    filter: sepia(0);
-    transition: 1s;
 }
-
 
 .hero h1,
 .hero p {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-}
-
-.servicios {
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 60px;
-    width: 100%;
-    height: 100%;
-}
-
-.s:hover {
-
-    box-shadow: 5px 5px 15px 0px black;
-
-}
-
-.servicios img {
-    width: 100%;
-    height: 160px;
-    object-fit: contain;
-
-}
-
-.serviciosencabezado {
-    width: 100%;
-    height: auto;
-    font-size: 30px;
-    flex-direction: column;
-    text-align: center;
-}
-
-.serviciosimagenes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-
-
-}
-
-.s1,
-.s2,
-.s3,
-.s4 {
-    padding: 10px;
-}
-
-.serviciosimagenes h3,
-.serviciosimagenes p {
-    text-align: center;
-}
-
-.seccionbaja {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: #a5cefa;
-    margin: 10px 0px;
-}
-
-.seccionbaja img {
-    width: 100px;
-    object-fit: cover;
-}
-
-.baja1,
-.baja2,
-.baja3,
-.baja4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    padding: 10px;
-
-
 }
 
 /*estilos de promociones.html*/
@@ -323,6 +242,7 @@
 }
 
 
+
 /* estilos para la pagina contacto.html */
 
 .encab {
@@ -347,7 +267,7 @@
 
 .card:hover {
     box-shadow: 5px 5px 15px 0px black;
-  
+
 }
 
 /* estilos para la pagina empresa.html */
@@ -476,9 +396,6 @@
         object-fit: contain;
     }
 
-
-
-
     .hero {
         display: flex;
         flex-direction: column;
@@ -490,36 +407,7 @@
         height: 110px;
     }
 
-    .servicios {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .serviciosimagenes {
-        display: flex;
-        flex-direction: column;
-        object-fit: cover;
-    }
-
-    .serviciosencabezado {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .seccionbaja {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .seccionbaja img {
-        width: 60px;
-        object-fit: cover;
-    }
-
-
-    .cardbody img {
+     .cardbody img {
         width: 100%;
         height: 30%;
         object-fit: cover;
@@ -552,7 +440,7 @@
         font-size: 5px;
     }
 
-        .empre {
+    .empre {
         display: flex;
         flex-direction: column;
     }
@@ -571,10 +459,10 @@
 
     .encab {
         display: flex;
-        flex-direction:column;
-     }
+        flex-direction: column;
+    }
 
-    .encab img{
+    .encab img {
         width: 100px;
         height: 100px;
     }
@@ -585,7 +473,7 @@
     }
 
     .cardbody:hover .bandera {
-          width: 50px;
+        width: 50px;
         height: 50px;
     }
 
