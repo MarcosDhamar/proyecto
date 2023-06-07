@@ -1,0 +1,95 @@
+@media only screen and (max-width:1024px) {
+
+    .barrademenu {
+        list-style-type: none;
+        @include d_a_j_d(flex, none, flex-end, column);
+
+    }
+
+    .barrademenu ul {
+        list-style-type: none;
+        @include d_a_j_d(flex, none, flex-end, column);
+    }
+
+    .barrademenu img {
+        @include formato_img(15px, 15px, contain)
+    }
+
+
+    .piepagina {
+        @include d_a_j_d(flex, center, center, column);
+        text-align: center;
+    }
+
+    .piepagina img {
+        @include formato_img(20px, 20px, contain)
+    }
+
+    .hero {
+        @include d_a_j_d(flex, none, none, column);
+    }
+
+    .hero img {
+        @include formato_img(110px, 110px, cover);
+    }
+
+    .cardbody img {
+        @include formato_img(100%, 30%, cover);
+    }
+
+    .cardbody {
+        @include b_a_p(50%,50%,0);
+        @include d_a_j_d(flex, none, none, column);
+
+    }
+
+    .cardbody h2,
+    .cardbody p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .bandera {
+        background-color: brown;
+        padding: 5px;
+        color: aliceblue;
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        width: 50%;
+        height: 5%;
+        font-size: 5px;
+    }
+
+    .empre {
+        @include d_a_j_d(flex, none, none, column);
+    }
+
+    .video {
+        @include d_a_j_d(flex, none, none, column);
+
+    }
+
+    .mapa {
+        @include d_a_j_d(flex, none, none, column);
+
+    }
+
+    .encab {
+        @include d_a_j_d(flex, none, none, column);
+    }
+
+    .encab img {
+        @include formato_img(100px,100px,0);
+    }
+
+    .cardbody:hover img {
+        @include formato_img(100%,200px,0);
+    }
+
+    .cardbody:hover .bandera {
+        @include formato_img(50px,50px,0);
+    }
+
+
+}

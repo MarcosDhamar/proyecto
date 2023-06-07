@@ -1,0 +1,65 @@
+.empre {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+
+        'z1 z1 z2 z2'
+        'z1 z1 z2 z2'
+        'z3 z3 z4 z4'
+        'z3 z3 z4 z4'
+    ;
+    gap: 30px;
+    background-color: $colorempresabase;
+
+}
+
+.empre1 {
+    grid-area: z1;
+    @include d_a_j_d(flex, center, center, column);
+    text-align: justify;   
+    padding: 30px;
+}
+
+.empre2 {
+    grid-area: z2;
+    @include d_a_j_d(flex, center, center, column);    
+    text-align: justify;
+    padding: 30px;
+}
+
+.video {
+    grid-area: z3;
+}
+
+.mapa {
+    grid-area: z4;
+}
+
+.empre1 img {
+    @include formato_img(70%, 100px, cover);
+    border-radius: 30%;
+}
+
+.empre2 img {
+    @include formato_img(70%, 200px, cover);
+    border-radius: 30%;
+
+}
+
+.video {
+    @include d_a_j_d(flex, none, center, none);
+    font-size: 15px;
+    gap: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.mapa {
+
+    @include d_a_j_d(flex, none, center, none);
+    font-size: 15px;
+    gap: 20px;
+    margin: 10px;
+    text-align: center;
+}

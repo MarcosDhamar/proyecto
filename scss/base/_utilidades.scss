@@ -1,0 +1,20 @@
+@mixin d_a_j_d ($display,$align,$justify,$direction){
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+
+}
+
+@mixin b_a_p ($ancho, $alto, $paddin) {
+    width: $ancho;
+    height: $alto;
+    padding: $paddin;
+}
+
+@mixin formato_img ($anchoimg, $altoimg, $fi) {
+    width: $anchoimg;
+    height: $altoimg;
+    object-fit: $fi;
+}
+

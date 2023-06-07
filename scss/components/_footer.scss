@@ -1,0 +1,40 @@
+
+.piepagina {
+    background-color: #144272;
+    gap: 15px;
+    @include d_a_j_d(flex, none, space-between, none);
+}
+
+.logopie img {
+    @include formato_img(150px,150px,contain);
+}
+
+.logopie a {
+    @include d_a_j_d(flex, center, none, none);
+    color: white;
+    font-size: 30px;
+    gap: 15px;
+}
+
+.textopie {
+    @include d_a_j_d(flex, center, center, column);
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.botonesredes img {
+    @include formato_img(40px,40px,cover);
+    border-radius: 15%;
+}
+
+
+.botonesredes a {
+    @include d_a_j_d(flex, center, center, none);
+    color: white;
+    gap: 20px;
+    margin: 10px;
+}
+
+.piepagina a:hover {
+    box-shadow: 5px 5px 15px 0px black;
+}
