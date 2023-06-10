@@ -4,49 +4,58 @@
         list-style-type: none;
         @include d_a_j_d(flex, none, flex-end, column);
 
-    }
+        ul {
+            list-style-type: none;
+            @include d_a_j_d(flex, none, flex-end, column);
+        }
 
-    .barrademenu ul {
-        list-style-type: none;
-        @include d_a_j_d(flex, none, flex-end, column);
-    }
+        img {
+            @include formato_img(15px, 15px, contain)
+        }
 
-    .barrademenu img {
-        @include formato_img(15px, 15px, contain)
     }
-
 
     .piepagina {
         @include d_a_j_d(flex, center, center, column);
         text-align: center;
-    }
 
-    .piepagina img {
-        @include formato_img(20px, 20px, contain)
+        img {
+            @include formato_img(20px, 20px, contain)
+        }
+
     }
 
     .hero {
         @include d_a_j_d(flex, none, none, column);
+
+        img {
+            @include formato_img(110px, 110px, cover);
+        }
     }
 
-    .hero img {
-        @include formato_img(110px, 110px, cover);
-    }
 
-    .cardbody img {
-        @include formato_img(100%, 30%, cover);
-    }
 
     .cardbody {
-        @include b_a_p(50%,50%,0);
+        @include b_a_p(50%, 50%, 0);
         @include d_a_j_d(flex, none, none, column);
 
-    }
+        img {
+            @include formato_img(100%, 30%, cover);
+        }
 
-    .cardbody h2,
-    .cardbody p {
-        text-align: center;
-        font-size: 20px;
+        h2,
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+        &:hover img {
+            @include formato_img(100%, 200px, 0);
+        }
+
+        &:hover .bandera {
+            @include formato_img(50px, 50px, 0);
+        }
+
     }
 
     .bandera {
@@ -77,18 +86,10 @@
 
     .encab {
         @include d_a_j_d(flex, none, none, column);
-    }
 
-    .encab img {
-        @include formato_img(100px,100px,0);
-    }
-
-    .cardbody:hover img {
-        @include formato_img(100%,200px,0);
-    }
-
-    .cardbody:hover .bandera {
-        @include formato_img(50px,50px,0);
+        img {
+            @include formato_img(100px, 100px, 0);
+        }
     }
 
 

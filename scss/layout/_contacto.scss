@@ -2,11 +2,11 @@
     font-size: 30px;
     @include d_a_j_d(flex, center, center, row-reverse);
     text-align: center;
-}
 
-.encab img {
-    @include formato_img(300px,300px,cover);
-    border-radius: 45%;
-    border: 10px #0A2647 solid;
-
+    img {
+        @include formato_img(300px,300px,cover);
+        border-radius: 45%;
+        border: 10px #0A2647 solid;
+    
+    }
 }

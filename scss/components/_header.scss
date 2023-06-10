@@ -1,32 +1,38 @@
 .barrademenu {
     background-color: #144272;
     @include d_a_j_d(flex, none, space-between, none);
+
+    a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 20px;
+        padding: 10px;
+        @include d_a_j_d(flex, center, center, none);
+        gap: 10px;
+
+        &:hover {
+            font-size: 30px;
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    img {
+        @include formato_img(50px,50px,contain);
+
+        &:hover{
+            transform: rotate(360deg);
+            transition: 3s;
+          
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        @include d_a_j_d(flex, none, flex-end, none);
+    }
+
 }
 
-.barrademenu a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
-    padding: 10px;
-    @include d_a_j_d(flex, center, center, none);
-    gap: 10px;
-}
 
-
-
-.barrademenu img {
-    @include formato_img(50px,50px,contain);
-}
-
-.barrademenu ul {
-    list-style-type: none;
-    @include d_a_j_d(flex, none, flex-end, none);
-}
-
-.barrademenu a:hover {
-    font-size: 30px;
-    box-shadow: 5px 5px 15px 0px black;
-}
 
 
 

@@ -10,12 +10,6 @@
     padding: 20px;
 }
 
-.cardbody img {
-    @include formato_img(40%,100%,cover);
-    transition: .3s;
-    filter: sepia(2)
-}
-
 .cardbody {
     background-color: rgb(4, 84, 116);
     @include formato_img(90%,400px,none);
@@ -27,13 +21,36 @@
     padding: 10px;
     color: aliceblue;
 
+    img {
+        @include formato_img(40%,100%,cover);
+        transition: .3s;
+        filter: sepia(2)
+    }
+
+   h2, p {
+        padding: 14px;
+    }
+
+    &:hover img {
+        filter: sepia(0);
+        @include formato_img(50%,900px,none);
+    }
+
+    &:hover .bandera {
+        background-color: brown;
+        border-radius: 100%;
+        @include d_a_j_d(flex, center, center, none);
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        text-align: center;
+        color: #d9ebfa;
+        width: 100px;
+        height: 100px;
+    }
 
 }
 
-.cardbody h2,
-.cardbody p {
-    padding: 14px;
-}
 
 .bandera {
     width: 150px;
@@ -46,30 +63,8 @@
 
 
 .encabezadopromociones {
-    background-color: #4b79a1;
+    background-color: $colorempresabase;
     @include d_a_j_d(flex,center,center,none);
-    border: 5px solid #075ba5;
-    border-radius: 50px;
-    margin: 10px;
-    color: white;
     text-align: center;
 }
 
-
-.cardbody:hover img {
-    filter: sepia(0);
-    @include formato_img(50%,900px,none);
-}
-
-.cardbody:hover .bandera {
-    background-color: brown;
-    border-radius: 100%;
-    @include d_a_j_d(flex, center, center, none);
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    text-align: center;
-    color: #d9ebfa;
-    width: 100px;
-    height: 100px;
-}

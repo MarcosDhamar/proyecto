@@ -2,11 +2,12 @@
 .piepagina {
     background-color: #144272;
     gap: 15px;
-    @include d_a_j_d(flex, none, space-between, none);
+    @include d_a_j_d(flex, none, space-between, none);   
 }
 
 .logopie img {
     @include formato_img(150px,150px,contain);
+
 }
 
 .logopie a {
@@ -14,6 +15,11 @@
     color: white;
     font-size: 30px;
     gap: 15px;
+
+
+    &:hover {
+        box-shadow: 5px 5px 15px 0px black;
+    }
 }
 
 .textopie {
@@ -33,8 +39,9 @@
     color: white;
     gap: 20px;
     margin: 10px;
+
+    &:hover {
+        box-shadow: 5px 5px 15px 0px black;
+    }
 }
 
-.piepagina a:hover {
-    box-shadow: 5px 5px 15px 0px black;
-}
