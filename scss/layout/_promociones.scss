@@ -1,8 +1,6 @@
-
-
 .cards2 {
     background-color: $colorempresabase;
-    @include d_a_j_d(flex,center,center,column);
+    @include d_a_j_d(flex, center, center, column);
     flex-wrap: wrap;
     min-height: 100vh;
     max-height: 100%;
@@ -12,8 +10,8 @@
 
 .cardbody2 {
     background-color: rgb(4, 84, 116);
-    @include formato_img(900px,300px,none);
-    @include d_a_j_d(flex,center,space-between,none);
+    @include formato_img(900px, 300px, none);
+    @include d_a_j_d(flex, center, space-between, none);
     transition: .5s;
     gap: 20px;
     overflow: hidden;
@@ -22,18 +20,19 @@
     color: aliceblue;
 
     img {
-        @include formato_img(40%,100%,cover);
+        @include formato_img(40%, 100%, cover);
         transition: .3s;
         filter: sepia(2)
     }
 
-   h2, p {
+    h2,
+    p {
         padding: 5px;
     }
 
     &:hover img {
         filter: sepia(0);
-        @include formato_img(200px,900px,none);
+        @include formato_img(200px, 900px, none);
     }
 
     &:hover .bandera {
@@ -51,7 +50,6 @@
 
 }
 
-
 .bandera {
     width: 300px;
     height: 50px;
@@ -60,10 +58,8 @@
     color: #d9ebfa;
 }
 
-
 .encabezadopromociones {
     background-color: $colorempresabase;
-    @include d_a_j_d(flex,center,center,none);
+    @include d_a_j_d(flex, center, center, none);
     text-align: center;
 }
-

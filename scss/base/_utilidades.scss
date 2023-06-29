@@ -1,4 +1,4 @@
-@mixin d_a_j_d ($display,$align,$justify,$direction){
+@mixin d_a_j_d ($display, $align, $justify, $direction) {
     display: $display;
     align-items: $align;
     justify-content: $justify;
@@ -17,4 +17,3 @@
     height: $altoimg;
     object-fit: $fi;
 }
-

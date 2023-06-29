@@ -6,7 +6,7 @@
 .empre1 {
 
     @include d_a_j_d(flex, center, center, column);
-    text-align: justify;   
+    text-align: justify;
     padding: 50px;
     gap: 30px;
 
@@ -14,11 +14,11 @@
         @include formato_img(40%, 300px, cover);
         border-radius: 20%;
     }
-    
+
 }
 
 .empre2 {
-    @include d_a_j_d(flex, center, center, column);    
+    @include d_a_j_d(flex, center, center, column);
     text-align: justify;
     padding: 70px;
     gap: 30px;
@@ -26,13 +26,13 @@
     img {
         @include formato_img(40%, 200px, cover);
         border-radius: 30%;
-    
+
     }
 }
 
 .video {
- 
-text-align: center;
+
+    text-align: center;
 }
 
 .mapa {

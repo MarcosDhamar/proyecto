@@ -4,28 +4,30 @@
 }
 
 .carousel-inner img {
-    @include formato_img(100%,500px,cover);
+    @include formato_img(100%, 500px, cover);
 }
 
 .hero {
+    text-align: center;
     background-color: $colorempresabase;
     @include b_a_p(100%, 100%, 50px);
-    @include d_a_j_d(flex,center,justify-content,none);
+    @include d_a_j_d(flex, center, justify-content, none);
 
     img {
-        @include formato_img(300px, 300px,cover);
+        @include formato_img(300px, 300px, cover);
         border-radius: 100%;
 
 
-        &:hover{
+        &:hover {
             transform: rotate(360deg);
             transition: 3s;
-           }
+        }
     }
 
-   h1, p {
+    h1,
+    p {
         font-size: 20px;
         text-align: center;
+        
     }
 }
-
